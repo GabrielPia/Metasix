@@ -1,0 +1,13 @@
+<div class="container">
+    <div class="game_box">
+        <div class="game_header">
+            <span>Animal Game <i class="fas fa-paw"></i></span>
+        </div>
+        <div class="game_body">
+            <app-welcome-panel *ngIf="welcomePanel"
+            (startGame)="startGame($event)"></app-welcome-panel>
+            <app-questions-panel *ngIf="questionsPanel"></app-questions-panel>
+            <app-success-panel *ngIf="successPanel"></app-success-panel>
+        </div>
+    </div>
+</div>
