@@ -1,11 +1,9 @@
-<div class="body">
+<div *ngIf="!showAnimalConfirmationPanel && !showInsertAnimalPanel" class="body">
     <span>O seu animal {{getText()}}?</span>
     <div class="buttons">
-        <button [disabled]="showAnimalConfirmationPanel || showInsertAnimalPanel" 
-        (click)="confirmFeature(true)"
+        <button (click)="confirmFeature(true)"
         class="button" mat-button> Sim </button>
-        <button [disabled]="showAnimalConfirmationPanel || showInsertAnimalPanel" 
-        (click)="confirmFeature(false)"
+        <button (click)="confirmFeature(false)"
         class="button" mat-button> Não </button>
     </div>
 </div>

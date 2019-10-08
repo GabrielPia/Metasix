@@ -11,6 +11,6 @@
         <input matInput placeholder="Característica" [(ngModel)]="feature">
     </mat-form-field>
     <div class="buttons">
-        <button (click)="insertAnimal()" class="button" mat-button> Inserir </button>
+        <button [disabled]="!feature || !name" (click)="insertAnimal()" class="button" mat-button> Inserir </button>
     </div>
 </div>
