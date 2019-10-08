@@ -6,8 +6,11 @@
         <div class="game_body">
             <app-welcome-panel *ngIf="welcomePanel"
             (startGame)="startGame($event)"></app-welcome-panel>
-            <app-questions-panel *ngIf="questionsPanel"></app-questions-panel>
-            <app-success-panel *ngIf="successPanel"></app-success-panel>
+            <app-questions-panel *ngIf="questionsPanel"
+            (showSuccessPanel)="showSuccessPanel($event)"
+            (reset)="reset($event)"></app-questions-panel>
+            <app-success-panel *ngIf="successPanel"
+            (reset)="reset($event)"></app-success-panel>
         </div>
     </div>
 </div>

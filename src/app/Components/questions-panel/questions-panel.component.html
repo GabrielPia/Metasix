@@ -1,7 +1,16 @@
 <div class="body">
-    <span>O seu animal é {{getText()}}?</span>
+    <span>O seu animal {{getText()}}?</span>
     <div class="buttons">
-        <button class="button" mat-button> Sim </button>
-        <button class="button" mat-button> Não </button>
+        <button [disabled]="showAnimalConfirmationPanel || showInsertAnimalPanel" 
+        (click)="confirmFeature(true)"
+        class="button" mat-button> Sim </button>
+        <button [disabled]="showAnimalConfirmationPanel || showInsertAnimalPanel" 
+        (click)="confirmFeature(false)"
+        class="button" mat-button> Não </button>
     </div>
 </div>
+<app-confirmation-panel *ngIf="showAnimalConfirmationPanel" (foundAnimal)="foundAnimal($event)"
+    [animal]="confirmAnimal">
+</app-confirmation-panel>
+<app-insert-panel *ngIf="showInsertAnimalPanel" (insert)="insertAnimal($event)" [previousAnimal]="confirmAnimal">
+</app-insert-panel>

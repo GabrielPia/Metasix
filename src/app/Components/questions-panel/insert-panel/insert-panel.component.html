@@ -1,0 +1,16 @@
+<div class="body">
+    <span>Qual animal você pensou ?</span><br>
+    <mat-form-field>
+        <input matInput placeholder="Animal" [(ngModel)]="name">
+    </mat-form-field><br>
+    <span>Um {{name}} </span>
+    <span *ngIf="!feature">____</span>
+    <span *ngIf="feature != ''">{{feature}} </span>
+    <span> mas um {{previousAnimal.name}} não </span><br>
+    <mat-form-field>
+        <input matInput placeholder="Característica" [(ngModel)]="feature">
+    </mat-form-field>
+    <div class="buttons">
+        <button (click)="insertAnimal()" class="button" mat-button> Inserir </button>
+    </div>
+</div>

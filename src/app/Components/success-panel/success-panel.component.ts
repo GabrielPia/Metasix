@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-success-panel',
@@ -7,9 +7,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SuccessPanelComponent implements OnInit {
 
+  @Output() reset = new EventEmitter();
+
   constructor() { }
 
   ngOnInit() {
+  }
+
+  resetGame(){
+    this.reset.emit();
   }
 
 }

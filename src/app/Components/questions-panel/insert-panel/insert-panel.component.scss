@@ -1,0 +1,31 @@
+.body{
+    text-align: justify;
+}
+
+.buttons{
+    text-align: center;
+}
+
+//Changing Mat Input Colors
+::ng-deep .mat-focused .mat-form-field-label {
+    /*change color of label*/
+    color: rgb(255, 255, 255, 0.900) !important;
+}
+  
+::ng-deep.mat-form-field-underline {
+    /*change color of underline*/
+    background-color: rgba(255, 255, 255, 0.900) !important;
+} 
+  
+::ng-deep.mat-form-field-ripple {
+    /*change color of underline when focused*/
+background-color: rgb(255, 255, 255, 0.200) !important;
+}
+
+::ng-deep .mat-form-field-appearance-legacy .mat-form-field-label {
+    color:rgb(255, 255, 255, 0.200) !important;
+}
+
+mat-form-field{
+    margin-top:10px;
+}
