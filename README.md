@@ -26,7 +26,7 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
 
-##Explicação
+## Explicação
 
 Minha solução para o desafio foi feita em Angular.
 Pensei em simular um dicionário, representado pela classe "AnimalDict", em que a chave seria uma característica de um animal, e o valor, seria um array formado por dois animais, onde um se identifica com a característica, e o outro não. Além disso, cada animal pode, ou não apontar para uma nova característica. Se o animal apontar para uma próxima característica, outra pergunta será feita, com base na característica, se não, o programa perguntará se o próprio animal é o animal pensado pelo usuário.
