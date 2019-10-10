@@ -33,4 +33,4 @@ Pensei em simular um dicionário, representado pela classe "AnimalDict", em que 
 
 ## Instruções
 
-Digitar no CMD, npm i, para instalar as dependências e digitar ng serve, para rodar localmente (localhost:4200)
+Digitar no CMD, `npm i`, para instalar as dependências e digitar `ng serve`, para rodar localmente (localhost:4200)
